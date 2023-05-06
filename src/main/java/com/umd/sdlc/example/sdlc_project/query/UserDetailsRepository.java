@@ -85,7 +85,7 @@ public class UserDetailsRepository {
             userDetails.setId(rs.getLong("id"));
             userDetails.setUserId(rs.getLong("user_id"));
             userDetails.setAge(rs.getInt("age"));
-            userDetails.setBirtday(rs.getString("birthday"));
+            userDetails.setBirthday(rs.getString("birthday"));
             userDetails.setAddress(rs.getString("address"));
             return userDetails;
         }
