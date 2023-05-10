@@ -12,6 +12,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories("com.umd.sdlc.example.sdlc_project.query")
 public class SdlcProjectApplication {
 
+	/**
+	 * Main
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		SpringApplication.run(SdlcProjectApplication.class, args);
 	}
