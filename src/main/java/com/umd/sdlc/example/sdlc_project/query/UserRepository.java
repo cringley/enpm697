@@ -4,11 +4,11 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Component;
 
 import com.umd.sdlc.example.sdlc_project.models.User;
 
-@Repository
+@Component
 public interface UserRepository extends JpaRepository<User, Long>{
     @Query(value = "INSERT INTO Users (name, email, password, isAdmin) VALUES(:name, :email, :password, false)", nativeQuery = true)
     @Modifying
